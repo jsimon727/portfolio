@@ -72,9 +72,9 @@
 	
 
 		<!-- Carousel -->
-			<!-- <h4>I see you landed on a Web Development space. Let me show you my portfolio...</h4> -->
-			<a name="webdev">
+
 			<div class = "webdev">
+				<a name="webdev"></a>
 				<h2>Web Development</h2><br>
 
 				<h3>Quizery</h3>
@@ -265,4 +265,21 @@
 			</div>
 
 	</body>
+
+		<script>
+			$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+	</script>
 </html>
