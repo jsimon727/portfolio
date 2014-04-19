@@ -24,15 +24,15 @@
 				fadeDelay: 250
 			},
 
-		// Dropotron (dropdown menus)
-			dropotron: {
-				mode: 'fade',
-				speed: 350,
-				noOpenerFade: true,
-				alignment: 'center',
-				offsetX: -1,
-				offsetY: -16
-			},
+		// // Dropotron (dropdown menus)
+		// 	dropotron: {
+		// 		mode: 'fade',
+		// 		speed: 350,
+		// 		noOpenerFade: true,
+		// 		alignment: 'center',
+		// 		offsetX: -1,
+		// 		offsetY: -16
+		// 	},
 
 		// skelJS (probably don't need to change anything here unless you know what you're doing)
 			skelJS: {
@@ -365,7 +365,7 @@
 						
 						$window
 							.load(function() {
-								var imageURL = $header.css('background-image').replace(/"/g,"").replace(/url\(|\)$/ig, "");
+								var imageURL = $header.css('background-image')
 
 								$.n33_preloadImage(imageURL, function() {
 									

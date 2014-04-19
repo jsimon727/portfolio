@@ -37,7 +37,6 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Home</a></li>
 							<li><a href="#aboutme">About Me</a></li>
 							<li><a href="#webdev">Web Development</a></li>
 							<li><a href="#contact">Contact</a></li>
@@ -281,5 +280,9 @@
 		    }
 		  });
 		});
+
+		$(".toggle").on("click", function(){
+			$("#navPanel").toggle();
+		})
 	</script>
 </html>
